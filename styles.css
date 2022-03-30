@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: normal;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(90deg, #7F9BFF, #B8C7FB);
+}
+
+.container_children {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 36px 72px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background-color: white;
+    border-radius: 8px;
+}
+
+.task_manager {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #C8C8D4;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    margin-right: 1.5px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.calendar {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 8px 8px 0px;
+    background-color: #EFF0F9;
+}
+
+.task_manager__header {
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 1.5px solid #C8C8D4;
+    border-radius: 8px 0px 0px 0px;
+    color: #989CBD;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.task_manager__userinfor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1rem;
+    background-color: white;
+    border-bottom: 1.5px solid #C8C8D4;
+}
+
+.task_manager__userinfor__picture {
+    display: flex;
+    justify-content: center;
+}
+
+.team_ava {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.task_manager__userinfor__mail {
+    text-align: center;
+    padding: 1rem;
+}
+
+.task_manager__userinfor__function {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.background_icon {
+    background-color: #E9EBFB;
+    border-radius: 50%;
+    padding: 4px 5px;
+    border: none;
+    margin: 0px 16px;
+    width: 10%;
+    text-align: center;
+}
+
+.task_manager__userinfor__toolbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.task_manager__userinfor__toolbar__header {
+    text-align: end;
+    color: #989CBD;
+    font-size: x-small;
+    margin: 0rem 2.5rem;
+}
+
+.task_manager__userinfor__toolbar__process {
+    display: flex;
+    background-color: #EAEEFD;
+    height: 5px;
+    border-radius: 3px;
+    margin: 0.5rem 2.5rem;
+}
+
+.task_manager__userinfor__toolbar__process__completed {
+    background-color: #4E78FD;
+    width: 30%;
+    border-radius: 3px;
+    justify-content: center;
+    text-align: start;
+}
+
+.task_manager__userinfor__process {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.process {
+    text-align: center;
+    margin: 1rem;
+    width: 20%;
+}
+
+.task_manager__projects {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2.5rem;
+    background-color: white;
+    border-bottom: 1.5px solid #C8C8D4;
+}
+
+.task_manager__projects__header {
+    text-align: start;
+    color: #131B2F;
+    font-size: medium;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.task_manager__projects__item {
+    text-align: start;
+    color: #989CBD;
+    font-size: small;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.task_manager__team {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2.5rem;
+    background-color: white;
+    border-radius: 0px 0px 0px 8px;
+}
+
+.task_manager__team__header {
+    text-align: start;
+    color: #131B2F;
+    font-size: medium;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.task_manager__team__member {
+    display: flex;
+}
+
+.team_img {
+    width: 13%;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.calendar__header {
+    display: flex;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0 8px 0 0;
+    border-bottom: 1.5px solid #C8C8D4;
+}
+
+.calendar__header__search_button__container {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar__header__search_button {
+    width: 80%;
+    border: none;
+    text-align: start;
+    font-size: small;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.calendar__header__header {
+    width: 70%;
+    text-align: center;
+    color: #131B2F;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.calendar__header__more_button {
+    width: 15%;
+    border: none;
+    background-color: inherit;
+    text-align: end;
+    color: #989CBD;
+    font-size: medium;
+    font-weight: 900;
+}
+
+.calendar__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    border-radius: 0 0 8px 0;
+}
+
+.calendar__menu {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.calendar__menu__item {
+    width: 33.33%;
+}
+
+.calendar__menu__item__week_month_button {
+    max-width: 50%;
+    display: flex;
+}
+
+.calendar__menu__button {
+    width: 50%;
+    padding: 0.25rem;
+    justify-content: center;
+}
+
+.week_button {
+    color: white;
+    border-radius: 12px 0 0 12px;
+    background-color: #4F79FF;
+    border: 1.5px solid #4F79FF;
+    font-size: smaller;
+    font-weight: 700;
+}
+
+.month_button {
+    background-color: inherit;
+    border-radius: 0 12px 12px 0;
+    border: 1.5px solid #4F79FF;
+    color: #4F79FF;
+    font-size: smaller;
+    font-weight: 700;
+}
+
+.calendar__menu__item__12months {
+    display: flex;
+    justify-content: center;
+    background-color: inherit;
+    color: #131B2F;
+}
+
+.calendar__menu__item__12months__button {
+    border: none;
+    background-color: inherit;
+    width: 20%;
+}
+
+.calendar__menu__item__year {
+    text-align: center;
+    background-color: inherit;
+    font-size: smaller;
+    color: #7C8199;
+}
+
+.calendar__menu__button__weekends__addtask {
+    justify-content: center;
+    width: 40%;
+    padding: 0.25rem;
+    border-radius: 12px;
+    margin-left: 1rem;
+    font-size: smaller;
+}
+
+.calendar__table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar__table__header {
+    display: flex;
+}
+
+.calendar__table__header__days {
+    color: #7C8199;
+    font-weight: 600;
+    background-color: white;
+    padding: 1rem 0.5rem;
+    width: 20%;
+    text-align: center;
+    border: 1px solid #C8C8D4;
+    min-height: 5vh;
+}
+
+.calendar__table__header__days:hover {
+    background-color: aliceblue;
+}
+
+.calendar__table__day {
+    color: rgb(49, 46, 46);
+    font-weight: 600;
+    background-color: white;
+    padding: 1.5rem;
+    width: 20%;
+    border: 0.5px solid #C8C8D4;
+    max-height: 15vh;
+}
+
+.weekend{
+    display: none;
+}
+
+.weekday {
+    display: block;
+}
